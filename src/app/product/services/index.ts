@@ -1,0 +1,5 @@
+export { GetByIdProductService } from './get-by-id-product.service'
+export { GetAllProductsService } from './get-all-products.service'
+export { CreateProductService } from './create-product.service'
+export { UpdateProductService } from './update-product.service'
+export { RemoveProductService } from './remove-product.service'

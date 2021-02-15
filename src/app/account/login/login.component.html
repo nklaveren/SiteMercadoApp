@@ -1,0 +1,38 @@
+<h1>Bem vindo</h1>
+<h3>faça login para continuar</h3>
+<hr />
+<alert-error [errors]="errors"></alert-error>
+<form (ngSubmit)="handleLogin()" [formGroup]="loginForm">
+  <label for="username">Usuário </label>
+  <input
+    id="username"
+    name="username"
+    type="text"
+    formControlName="username"
+    [ngClass]="{'is-invalid': displayMessage.username}"
+  />
+  <span class="text-danger" *ngIf="displayMessage.username">
+    <p [innerHTML]="displayMessage.username"></p>
+  </span>
+
+  <label for="password">Senha</label>
+  <input
+    id="password"
+    name="password"
+    type="text"
+    formControlName="password"
+    [ngClass]="{'is-invalid': displayMessage.password}"
+  />
+  <span class="text-danger" *ngIf="displayMessage.password">
+    <p [innerHTML]="displayMessage.password"></p>
+  </span>
+  <div class="error-wrapper">
+    <span class="error"> </span>
+  </div>
+  <btn-default
+    [(isLoading)]="isLoading"
+    [disabled]="!loginForm.valid"
+    [inputText]="'Entrar'"
+    (handleClick)="handleLogin()"
+  ></btn-default>
+</form>
