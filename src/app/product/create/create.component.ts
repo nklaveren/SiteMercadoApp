@@ -58,11 +58,11 @@ export class CreateComponent extends BaseFormComponent implements OnInit {
 
   handleError(data) {
     this.isLoading = false
-    const result = data.error.errors.includes('product alread exists')
+    const result = data.error?.errors?.includes('product alread exists')
     if (result) {
       this.errors = ["Produto já existe"]
     } else
-      this.errors = data.error?.errors || data
+      this.errors = data.error?.errors || data 
   }
 
   protected currentForm(): FormGroup {
