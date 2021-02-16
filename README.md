@@ -3,8 +3,11 @@
 Rode `ng serve` para o ambiente de desenvolvimento e navegue para `http://localhost:4200/`.
 
 Este projeto trás o padrão de arquitetura proposto pelo angular.
+
 Foi utilizado apenas as bibliotecas padrões do angular;
+
 Não foi utilizado nenhum framework de css de terceiros;
+
 Foi utilizado SASS para compilador de CSS;
 
 **rotas publicas:**
