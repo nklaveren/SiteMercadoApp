@@ -22,3 +22,14 @@ rotas privadas:
 /product/:id
 /product/create
 
+<b>Atenção</b>
+Para o correto funcionamento dos testes end-to-end as credenciais do usuário devem
+ser salvas nas variáveis de ambiente do sistema local, com o seguinte nome:
+SiteMercadoUsername
+SiteMercadoPassword
+
+teste end to end pode ser rodado pelo comando:
+ng e2e
+
+testes unitários podem ser rodados pelo comando
+ng test
