@@ -38,14 +38,14 @@ testes unitários podem ser rodados pelo comando `ng test`
 
 
 ### Login
-![tests](login.png) 
+![login](login.png) 
 
 ### Produtos
-![proj](produtos.png) 
+![produtos](produtos.png) 
 
 ### Cadastro
-![swagger](cadastro.png)
+![cadastro](cadastro.png)
 
 ### Remover
-![swagger](remover.png)
+![remover](remove.png)
 
