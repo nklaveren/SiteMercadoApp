@@ -35,3 +35,17 @@ SiteMercadoPassword
 teste end to end pode ser rodado pelo comando `ng e2e`
 
 testes unitários podem ser rodados pelo comando `ng test`
+
+
+### Login
+![tests](login.png) 
+
+### Produtos
+![proj](produtos.png) 
+
+### Cadastro
+![swagger](cadastro.png)
+
+### Remover
+![swagger](remover.png)
+
