@@ -29,6 +29,6 @@ SiteMercadoUsername
 SiteMercadoPassword
 ```
 
-teste end to end pode ser rodado pelo comando 'ng e2e'`
+teste end to end pode ser rodado pelo comando `ng e2e`
 
-testes unitários podem ser rodados pelo comando 'ng test'`
+testes unitários podem ser rodados pelo comando `ng test`
