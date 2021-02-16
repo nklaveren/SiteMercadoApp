@@ -10,12 +10,12 @@ Não foi utilizado nenhum framework de css de terceiros;
 
 Foi utilizado SASS para compilador de CSS;
 
-**rotas publicas:**
+## rotas publicas:
 ```
 /account/login
 ```
 
-**rotas privadas:**
+## rotas privadas:
 ```
 /home
 /product
