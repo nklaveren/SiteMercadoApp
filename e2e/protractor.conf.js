@@ -15,13 +15,17 @@ exports.config = {
   capabilities: {
     browserName: 'chrome'
   },
+  suites: {
+    home: './src/login/app.login.e2e-spec.ts',
+    product: './src/products/product.e2e-spec.ts',
+  },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
-    print: function() {}
+    print: function () { }
   },
   onPrepare() {
     require('ts-node').register({

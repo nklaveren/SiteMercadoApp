@@ -1,4 +1,4 @@
-<h1>Bem vindo</h1>
+<h1>Bem vindo!</h1>
 <h3>faça login para continuar</h3>
 <hr />
 <alert-error [errors]="errors"></alert-error>
@@ -30,6 +30,7 @@
     <span class="error"> </span>
   </div>
   <btn-default
+    [id]="'btn-login'"
     [(isLoading)]="isLoading"
     [disabled]="!loginForm.valid"
     [inputText]="'Entrar'"

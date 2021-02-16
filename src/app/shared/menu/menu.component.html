@@ -1,15 +1,7 @@
 <div class="menu-container" *ngIf="isUserAuthenticated()">
   <div class="navbar">
-    <a routerLink="" (click)="logout()">Home</a>
-    <div class="dropdown">
-      <a class="dropbtn">
-        Produtos
-      </a>
-      <div class="dropdown-content">
-        <a routerLink="/product">Listar</a>
-        <a routerLink="/product/create">Cadastrar</a>
-      </div>
-    </div>
+    <a routerLink="/">Home</a>
+    <a routerLink="/product">Produtos</a>
     <a class="float-right" routerLink="/account/login" (click)="logout()"
       >Sair</a
     >

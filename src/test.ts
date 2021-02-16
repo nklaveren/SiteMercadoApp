@@ -13,11 +13,7 @@ declare const require: {
     <T>(id: string): T;
   };
 };
-// TestBed.configureTestingModule({
-//   declarations: [],
-//   imports: [],
-//   providers: []
-// })
+
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,

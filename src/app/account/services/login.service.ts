@@ -1,8 +1,10 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 import { catchError, map } from "rxjs/operators";
 import { BaseService } from "src/app/services/base.service";
-import { LoginModel } from "../models/LoginModel";
+import { LoginResponseModel } from "../models/login-response.model";
+import { LoginModel } from "../models/login.model";
 
 
 @Injectable()
@@ -15,7 +17,7 @@ export class LoginService extends BaseService {
   }
 
 
-  handle(login: LoginModel) {
+  handle(login: LoginModel): Observable<LoginResponseModel> {
     var response = this.http.post(this.UrlService + 'login', login, this.ObterHeaderJson())
       .pipe(
         map(this.extractData),

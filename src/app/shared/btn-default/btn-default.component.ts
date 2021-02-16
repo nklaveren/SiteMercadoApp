@@ -9,6 +9,7 @@ export class BtnDefaultComponent {
 
   constructor() { }
 
+  @Input() id = ""
   @Input() isLoading = false
   @Input() disabled = false
   @Input() inputText = ""

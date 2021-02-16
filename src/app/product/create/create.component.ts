@@ -17,8 +17,7 @@ export class CreateComponent extends BaseFormComponent implements OnInit {
 
   constructor(
     protected fb: FormBuilder,
-    private createProductService: CreateProductService,
-    private router: Router
+    private createProductService: CreateProductService
   ) {
     super(fb, {
       description: {

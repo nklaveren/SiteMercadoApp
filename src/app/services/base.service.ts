@@ -1,7 +1,6 @@
 import { HttpErrorResponse, HttpHeaders } from "@angular/common/http";
 import { throwError } from "rxjs";
 import { environment } from "src/environments/environment";
-import { LoaderService } from "./loader.service";
 import { UserService } from "./user.service";
 
 export abstract class BaseService {

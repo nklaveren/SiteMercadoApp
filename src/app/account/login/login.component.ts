@@ -5,7 +5,7 @@ import { timeout } from 'rxjs/operators';
 import { BaseFormComponent } from 'src/app/components/base-form.component';
 import { LoaderService } from 'src/app/services/loader.service';
 import { UserService } from 'src/app/services/user.service';
-import { LoginModel } from '../models/LoginModel';
+import { LoginModel } from '../models/login.model';
 import { LoginService } from '../services/login.service';
 
 @Component({
@@ -54,12 +54,14 @@ export class LoginComponent extends BaseFormComponent implements OnInit {
     this.login = Object.assign(<LoginModel>{}, this.login, this.loginForm.value)
     this.loginService.handle(this.login)
       .subscribe(
-        success => {
+        data => {
           this.isLoading = false;
-          if (success.token) {
-            this.userService.saveToken(success.token);
+          if (data.success && data.token) {
+            this.userService.saveToken(data.token);
             const { returnUrl } = this.route.snapshot.queryParams;
             this.router.navigate([returnUrl || '/home'])
+          } else {
+            this.errors = [data.error];
           }
         },
         error => {

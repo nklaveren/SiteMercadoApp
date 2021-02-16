@@ -1,6 +1,8 @@
-<div class="alert alert-danger" *ngIf="errors.length">
-  <h3 id="msgRetorno">Ops, Algo deu errado</h3>
+<div class="alert alert-danger" *ngIf="errors?.length">
+  <h3 id="error-msg-retorno">Ops, Algo deu errado</h3>
   <ul>
-    <li *ngFor="let error of errors">{{error}}</li>
+    <li [ngClass]="'error-'+ (i+1)" *ngFor="let error of errors; let i = index">
+      {{error}}
+    </li>
   </ul>
 </div>
